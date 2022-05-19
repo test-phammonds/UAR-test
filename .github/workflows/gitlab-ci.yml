@@ -1,0 +1,11 @@
+stages:
+  - net-access-rights
+
+net_access:
+  stage: net-access-rights
+  tags:
+  - windows
+  - net
+  script:
+   - |
+    ./net-access-rights.ps1
