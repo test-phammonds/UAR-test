@@ -29,4 +29,4 @@ jobs:
       - name: UAR script
         shell: pwsh
         run: |
-        ./net-access-rights.ps1
+        .\net-access-rights.ps1
