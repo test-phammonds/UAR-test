@@ -7,5 +7,4 @@ net_access:
   - windows
   - net
   script:
-   - |
     ./net-access-rights.ps1
