@@ -27,5 +27,6 @@ jobs:
 
       # Run UAR PS script
       - name: UAR script
+        shell: pwsh
         run: |
         ./net-access-rights.ps1
