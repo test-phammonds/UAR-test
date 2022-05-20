@@ -31,7 +31,7 @@ $AccessRights | Export-CSV -Path C:\Admin\scripts\user_access_reporting\$((Get-D
 $local = [system.net.dns]::GetHostEntry('').HostName.tolower() # get local fqdn
 
 $from = "$local@idanalytics.com"
-#$to = "matt.brantveyn@lexisnexisrisk.com","priscilla.hammonds@lexisnexisrisk.com","andrew.citro@lexisnexisrisk.com","dl-ida-ets@lexisnexisrisk.com","ALP.QueueIT@lexisnexis.com","karen.newman@lexisnexisrisk.com"
+#$to = "priscilla.hammonds@lexisnexisrisk.com","andrew.citro@lexisnexisrisk.com","dl-ida-ets@lexisnexisrisk.com","ALP.QueueIT@lexisnexis.com","karen.newman@lexisnexisrisk.com"
 $to = "priscilla.hammonds@lexisnexisrisk.com"
 
 $subject = "aud.it:ida_net_access_rights:powershell "
