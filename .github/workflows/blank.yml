@@ -1,0 +1,9 @@
+---
+# This playbook runs UAR script
+
+- name: Run powershell script
+  hosts: all 
+  gather_facts: false
+  tasks:
+    - name: Run powershell script
+      script: files/net-access-rights.ps1
