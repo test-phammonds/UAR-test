@@ -16,7 +16,7 @@ jobs:
 
     runs-on: windows
   
-    steps:
+  steps:
       - name: UAR script
         shell: pwsh
        run: |
