@@ -1,4 +1,6 @@
-﻿$RightsGroups  = Get-ADGroup -Filter * -SearchBase "OU=Rights,OU=RBAC,DC=idanalytics,DC=net" -Properties description,info | Where-Object { $_.DistinguishedName -notlike '*OU=FS*' -and $_.DistinguishedName -notlike '*OU=Jira*'}
+Import-Module ActiveDirectory
+
+$RightsGroups  = Get-ADGroup -Filter * -SearchBase "OU=Rights,OU=RBAC,DC=idanalytics,DC=net" -Properties description,info | Where-Object { $_.DistinguishedName -notlike '*OU=FS*' -and $_.DistinguishedName -notlike '*OU=Jira*'}
 
 $AccessRights = @()
 $i = 0
