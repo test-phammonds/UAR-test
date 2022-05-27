@@ -1,5 +1,6 @@
 name: How to use a Windows Runner on GitHub Actions
 on: push
+runs-on: self-hosted
 jobs:
   build:
     runs-on: windows-2019
